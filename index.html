@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/34ddbc7874.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Photos</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                <h1>Facundo Saavedra</h1>
+                <p>Desarrollador web: Principiante.</p>
+            </div>
+            <!-- Barra busqueda -->
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar..">
+            </form>
+            <!-- Categorias -->
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+
+        </header>
+        <section class="grid" id="grid">
+            <!-- Leon -->
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="Animal animales leon"
+            data-descripcion="Leon">
+
+                <div class="item-content">
+                    <img src="img/animal1.png" alt="Cara de un leon">
+                </div>
+            </div>
+            <!-- Panda -->
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="Animal animales panda"
+            data-descripcion="Panda durmiendo">
+
+                <div class="item-content">
+                    <img src="img/animal2.png" alt="Panda durmiendo">
+                </div>
+            </div>
+            <!-- New York 1. -->
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="Ciudad ciudad city autos coches atardecer lluvia car New York"
+            data-descripcion="New York City">
+
+                <div class="item-content">
+                    <img src="img/ciudad1.png" alt="New York City">
+                </div>
+            </div>
+            <!-- New York 2. -->
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="Ciudad city ciudad car autos puente atardecer New York"
+            data-descripcion="New York (II)">
+
+                <div class="item-content">
+                    <img src="img/ciudad2.png" alt="New York City">
+                </div>
+            </div>
+            <!-- Hojas verdes -->
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="hojas naturaleza verde green natural"
+            data-descripcion="Hojas verdes">
+
+                <div class="item-content">
+                    <img src="img/naturaleza1.png" alt="Hojas verdes sobre el suelo">
+                </div>
+            </div>
+            <!-- Playa con montañas -->
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="Montaña montañas paisaje mar atardaecer nubes playa"
+            data-descripcion="Playa y montañas">
+
+                <div class="item-content">
+                    <img src="img/paisaje1.png" alt="Playa con montaña">
+                </div>
+            </div>
+            <!-- Punta de montaña -->
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="Montaña nubes altura alto cerro paisaje"
+            data-descripcion="Punta de montaña">
+
+                <div class="item-content">
+                    <img src="img/paisaje2.png" alt="Montaña desde la punta">
+                </div>
+            </div>
+            <!-- Persona morocha -->
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="Persona morocha frente cara ojos boca nariz pelo"
+            data-descripcion="Persona de frente">
+
+                <div class="item-content">
+                    <img src="img/persona1.png" alt="Persona mirando a la camara de frente">
+                </div>
+            </div>
+            <!-- Persona pelirroja -->
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="Persona pelirroja frente cara ojos boca nariz pelo"
+            data-descripcion="Persona de frente">
+
+                <div class="item-content">
+                    <img src="img/persona2.png" alt="Persona mirando a la camara de frente">
+                </div>
+            </div>
+        </section>
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fa-solid fa-circle-xmark"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"> </p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <!-- Twitter -->
+                <div class="contenedor-icono">
+                    <a href="https://twitter.com/Facusaavedrx" target="_blank" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>                    
+                </div>
+                <!-- Facebook -->
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/Facusaavedrx/" target="_blank" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <!-- Instagram -->
+                <div class="contenedor-icono">
+                    <a href="instagram.com/Facusaavedrx/" target="_blank" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="creador-por">
+                <p>Sitio diseñado por <a href="https://twitter.com/Facusaavedrx">Facundo Saavedra</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
